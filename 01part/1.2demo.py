@@ -52,4 +52,4 @@ for tag, *args in records:
 
 
 # 解压一些元素后丢弃他们，使用废弃变量
-record =('name')
+record =('name',20,)
