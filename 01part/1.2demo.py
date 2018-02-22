@@ -51,5 +51,17 @@ for tag, *args in records:
         do_bar(*args)
 
 
-# 解压一些元素后丢弃他们，使用废弃变量
-record =('name',20,)
+# 解压一些元素后丢弃他们，使用废弃变量,如： _或者 ign(ignore)
+record = ('jake', 20, 180, (2, 22, 2018))
+name, *_, (*_, year) = record
+print(name, year)
+
+
+# 利用星号表达式形成递归
+
+items = [1, 10, 7, 4, 5, 9]
+
+
+def sum_(items):
+    head, *tail = items
+    return head+ sum_(tail) if tail else head #
