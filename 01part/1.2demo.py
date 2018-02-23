@@ -65,3 +65,5 @@ items = [1, 10, 7, 4, 5, 9]
 def sum_(items):
     head, *tail = items
     return head+ sum_(tail) if tail else head #
+
+print("总和",sum_(items))
